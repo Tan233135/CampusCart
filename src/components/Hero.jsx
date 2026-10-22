@@ -17,9 +17,6 @@ export default function Hero() {
     <section className="overflow-hidden bg-white pb-16 pt-14 sm:pb-20 sm:pt-20 lg:pb-24 lg:pt-24">
       <div className="mx-auto max-w-7xl px-5 sm:px-8 lg:px-10">
         <div className="mx-auto max-w-4xl text-center">
-          <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-emerald-100 bg-mint px-3.5 py-2 text-[10px] font-bold uppercase tracking-[0.18em] text-emerald-700">
-            <Sparkles size={13} /> The campus marketplace
-          </div>
           <h1 className="font-display text-[clamp(2.75rem,7vw,5.8rem)] font-extrabold leading-[1.04] tracking-[-0.075em] text-ink">
             Good finds.<br /><span className="text-emerald-500">Better campus life.</span>
           </h1>
