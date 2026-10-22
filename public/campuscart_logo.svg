@@ -1,0 +1,154 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%" height="100%">
+  <defs>
+    <!-- Drop Shadow Filter -->
+    <filter id="dropShadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="12" stdDeviation="8" flood-color="#000000" flood-opacity="0.15" />
+    </filter>
+  </defs>
+
+  <!-- MAIN CONTENT GROUP -->
+  <g filter="url(#dropShadow)">
+
+    <!-- 1. LAPTOP (FURTHEST BACK) -->
+    <g transform="translate(195, 125)">
+      <!-- Screen Outer -->
+      <rect x="10" y="10" width="85" height="55" rx="5" fill="#000000" stroke="#000000" stroke-width="1.5" />
+      <!-- Screen Inner Display -->
+      <rect x="15" y="15" width="75" height="45" rx="3" fill="#FFFFFF" />
+      <!-- Code / Content Lines on Screen -->
+      <line x1="22" y1="27" x2="55" y2="27" stroke="#000000" stroke-width="3" stroke-linecap="round" />
+      <line x1="22" y1="36" x2="68" y2="36" stroke="#000000" stroke-width="3" stroke-linecap="round" />
+      <line x1="22" y1="45" x2="45" y2="45" stroke="#000000" stroke-width="3" stroke-linecap="round" />
+      <!-- Laptop Base / Keyboard -->
+      <path d="M 0 65 L 105 65 L 98 73 L 7 73 Z" fill="#000000" />
+      <path d="M 42 66 L 63 66 L 62 69 L 43 69 Z" fill="#FFFFFF" />
+    </g>
+
+    <!-- 2. BOOK (LEFT TILTED) -->
+    <g transform="translate(110, 125) rotate(-14)">
+      <!-- Book Cover Shadow/Thickness -->
+      <rect x="4" y="4" width="80" height="110" rx="8" fill="#000000" />
+      <!-- Book Pages Edge -->
+      <rect x="0" y="0" width="80" height="110" rx="8" fill="#FFFFFF" stroke="#000000" stroke-width="2" />
+      <!-- Book Front Cover -->
+      <rect x="0" y="0" width="74" height="110" rx="7" fill="#000000" />
+      <!-- Book Spine Highlight -->
+      <rect x="66" y="0" width="8" height="110" rx="3" fill="#333333" />
+      <!-- Book Cover Details/Lines -->
+      <line x1="14" y1="35" x2="50" y2="35" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" />
+      <line x1="14" y1="48" x2="42" y2="48" stroke="#FFFFFF" stroke-width="3.5" stroke-linecap="round" opacity="0.7" />
+      <line x1="14" y1="58" x2="35" y2="58" stroke="#FFFFFF" stroke-width="3.5" stroke-linecap="round" opacity="0.7" />
+    </g>
+
+    <!-- 3. BACKPACK (CENTER BOTTOM) -->
+    <g transform="translate(172, 215)">
+      <!-- Top Handle -->
+      <path d="M 32 12 Q 45 -4 58 12" fill="none" stroke="#000000" stroke-width="6" stroke-linecap="round" />
+      <!-- Main Backpack Body -->
+      <rect x="6" y="10" width="78" height="100" rx="28" fill="#000000" />
+      <!-- Top Arc Contour -->
+      <path d="M 6 45 Q 45 32 84 45" fill="none" stroke="#FFFFFF" stroke-width="2" />
+      <!-- Front Lower Pocket -->
+      <rect x="14" y="48" width="62" height="52" rx="12" fill="#222222" stroke="#FFFFFF" stroke-width="1.5" />
+      <rect x="14" y="48" width="62" height="12" rx="4" fill="#000000" />
+      <!-- Zipper Line -->
+      <line x1="20" y1="54" x2="70" y2="54" stroke="#FFFFFF" stroke-width="2" stroke-dasharray="4 3" />
+      <!-- Diamond Emblem / Patch -->
+      <rect x="38" y="22" width="14" height="14" rx="2" transform="rotate(45 45 29)" fill="#FFFFFF" />
+      <rect x="41" y="25" width="8" height="8" rx="1" transform="rotate(45 45 29)" fill="#000000" />
+    </g>
+
+    <!-- 4. VARSITY JACKET (RIGHT TILTED) -->
+    <g transform="translate(235, 130) rotate(10)">
+      <!-- Sleeves (White) -->
+      <!-- Left Sleeve -->
+      <path d="M 28 50 L 5 130 C 3 140, 20 150, 32 140 L 48 70 Z" fill="#FFFFFF" stroke="#000000" stroke-width="2" />
+      <!-- Right Sleeve -->
+      <path d="M 125 50 L 148 130 C 150 140, 133 150, 121 140 L 105 70 Z" fill="#FFFFFF" stroke="#000000" stroke-width="2" />
+
+      <!-- Main Body (Black) -->
+      <path d="M 30 45 L 123 45 L 115 160 L 38 160 Z" fill="#000000" />
+
+      <!-- Collar (Striped) -->
+      <path d="M 45 45 C 55 25, 98 25, 108 45 C 92 37, 61 37, 45 45 Z" fill="#FFFFFF" />
+      <path d="M 50 43 C 58 29, 95 29, 103 43 C 90 37, 63 37, 50 43 Z" fill="#000000" />
+
+      <!-- Snap Buttons -->
+      <circle cx="76" cy="65" r="3.5" fill="#FFFFFF" />
+      <circle cx="76" cy="88" r="3.5" fill="#FFFFFF" />
+      <circle cx="76" cy="111" r="3.5" fill="#FFFFFF" />
+      <circle cx="76" cy="134" r="3.5" fill="#FFFFFF" />
+
+      <!-- Welt Pockets -->
+      <path d="M 48 118 L 62 104" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" />
+      <path d="M 105 118 L 91 104" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" />
+
+      <!-- Bottom Hem Elastic Ribbing -->
+      <path d="M 37 153 L 116 153 L 114 163 L 39 163 Z" fill="#FFFFFF" />
+      <path d="M 37 156 L 116 156" stroke="#000000" stroke-width="2" />
+      <path d="M 38 160 L 115 160" stroke="#000000" stroke-width="2" />
+
+      <!-- Sleeve Cuffs -->
+      <path d="M 5 132 L 27 139 L 24 146 L 2 139 Z" fill="#000000" />
+      <path d="M 148 132 L 126 139 L 129 146 L 151 139 Z" fill="#000000" />
+    </g>
+
+    <!-- 5. GRADUATION CAP (TOP RIGHT OVERLAY) -->
+    <g transform="translate(290, 80) rotate(7)">
+      <!-- Cap Skull Cap (Underneath) -->
+      <path d="M 52 50 C 52 75, 112 75, 112 50 Z" fill="#000000" />
+      <path d="M 56 50 C 56 70, 108 70, 108 50 Z" fill="#222222" />
+
+      <!-- Diamond Rhombus Top -->
+      <polygon points="82,5 162,38 82,70 2,38" fill="#000000" stroke="#FFFFFF" stroke-width="1.5" />
+      <polygon points="82,9 154,38 82,65 10,38" fill="#111111" />
+
+      <!-- Tassel Button -->
+      <ellipse cx="82" cy="37" rx="5" ry="3" fill="#FFFFFF" />
+
+      <!-- Tassel Ribbon & Fringe -->
+      <path d="M 82 38 Q 118 42 124 72" fill="none" stroke="#FFFFFF" stroke-width="3.5" stroke-linecap="round" />
+      <!-- Tassel Band & Ring -->
+      <circle cx="124" cy="74" r="3" fill="#FFFFFF" />
+      <!-- Tassel Hanging Skirt -->
+      <polygon points="121,76 127,76 130,96 118,96" fill="#FFFFFF" />
+    </g>
+
+    <!-- 6. SHOPPING CART (FOREGROUND FRAME & WHEELS) -->
+    <g>
+      <!-- Cart Back & Side Structure Mesh (Behind Basket Front) -->
+      <path d="M 125 180 L 160 335 L 350 315 L 385 190" fill="none" stroke="#000000" stroke-width="4" stroke-opacity="0.3" />
+
+      <!-- Main Heavy Outer Frame Wire (Tubular Pipe) -->
+      <!-- Push Handle Bar & Main Outline -->
+      <path d="M 52 162 L 98 175 C 108 178, 114 188, 118 202 L 152 330 C 156 345, 170 355, 186 355 L 345 340 C 362 338, 375 324, 378 307 L 402 185 C 405 170, 395 158, 380 158 C 368 158, 360 166, 356 178" fill="none" stroke="#000000" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" />
+
+      <!-- Lower Chassis Support Base & Wheel Brackets -->
+      <path d="M 160 348 L 150 400 L 325 390 L 340 338" fill="none" stroke="#000000" stroke-width="11" stroke-linecap="round" stroke-linejoin="round" />
+
+      <!-- Front Basket Edge Highlight Rail -->
+      <path d="M 112 195 L 382 170" stroke="#000000" stroke-width="8" stroke-linecap="round" />
+
+      <!-- LEFT WHEEL Assembly -->
+      <g transform="translate(182, 415)">
+        <!-- Outer Tire -->
+        <circle cx="0" cy="0" r="20" fill="#000000" />
+        <!-- Inner Rim Cutout -->
+        <circle cx="0" cy="0" r="10" fill="#FFFFFF" />
+        <!-- Axle Pin -->
+        <circle cx="0" cy="0" r="4" fill="#000000" />
+      </g>
+
+      <!-- RIGHT WHEEL Assembly -->
+      <g transform="translate(322, 405)">
+        <!-- Outer Tire -->
+        <circle cx="0" cy="0" r="20" fill="#000000" />
+        <!-- Inner Rim Cutout -->
+        <circle cx="0" cy="0" r="10" fill="#FFFFFF" />
+        <!-- Axle Pin -->
+        <circle cx="0" cy="0" r="4" fill="#000000" />
+      </g>
+    </g>
+
+  </g>
+</svg>

@@ -1,5 +1,4 @@
 import { Link } from 'react-router-dom'
-import { ShoppingBag } from 'lucide-react'
 
 const columns = [
   { title: 'Explore', links: [['Marketplace', '/marketplace'], ['How it works', '/how-it-works'], ['Sell on CampusCart', '/marketplace']] },
@@ -13,7 +12,7 @@ export default function Footer() {
       <div className="mx-auto grid max-w-7xl gap-10 px-5 py-12 sm:grid-cols-2 sm:px-8 lg:grid-cols-[1.5fr_1fr_1fr_1fr] lg:px-10">
         <div>
           <Link to="/" className="inline-flex items-center gap-2.5">
-            <span className="grid h-9 w-9 place-items-center rounded-xl bg-emerald-500 text-white"><ShoppingBag size={18} /></span>
+            <img src="/campuscart_logo.svg" alt="" className="h-12 w-12 rounded-xl object-cover" />
             <span className="font-display text-lg font-extrabold tracking-[-0.06em]">Campus<span className="text-emerald-500">Cart</span></span>
           </Link>
           <p className="mt-4 max-w-xs text-sm leading-6 text-muted">A little marketplace with a lot of campus spirit. Good finds, passed around.</p>

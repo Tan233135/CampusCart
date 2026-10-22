@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { Link, NavLink } from 'react-router-dom'
-import { Menu, ShoppingBag, X } from 'lucide-react'
+import { Menu, X } from 'lucide-react'
 
 const navClass = ({ isActive }) =>
   `text-sm font-semibold transition-colors ${isActive ? 'text-emerald-700' : 'text-slate-600 hover:text-ink'}`
@@ -13,10 +13,16 @@ export default function Navbar() {
   return (
     <header className="sticky top-0 z-50 border-b border-slate-100/90 bg-white/90 backdrop-blur-xl">
       <nav className="mx-auto flex h-[76px] max-w-7xl items-center justify-between px-5 sm:px-8 lg:px-10" aria-label="Main navigation">
-        <Link to="/" onClick={closeMenu} className="flex items-center gap-2.5" aria-label="CampusCart home">
-          <span className="grid h-9 w-9 place-items-center rounded-xl bg-emerald-500 text-white">
-            <ShoppingBag size={19} strokeWidth={2.4} />
-          </span>
+        <Link
+          to="/"
+          onClick={() => {
+            closeMenu()
+            window.scrollTo({ top: 0, behavior: 'smooth' })
+          }}
+          className="flex items-center gap-2.5"
+          aria-label="CampusCart home"
+        >
+          <img src="/campuscart_logo.svg" alt="" className="h-12 w-12 rounded-xl object-cover" />
           <span className="font-display text-[19px] font-extrabold tracking-[-0.06em] text-ink">Campus<span className="text-emerald-500">Cart</span></span>
         </Link>
 
@@ -27,7 +33,7 @@ export default function Navbar() {
         </div>
 
         <div className="hidden items-center gap-5 md:flex">
-          <button type="button" className="text-sm font-semibold text-slate-600 transition-colors hover:text-ink">Log in</button>
+          <Link to="/login" className="text-sm font-semibold text-slate-600 transition-colors hover:text-ink">Log in</Link>
           <Link to="/marketplace" className="rounded-full bg-emerald-500 px-5 py-3 text-sm font-bold text-white shadow-sm transition hover:bg-emerald-700">Join CampusCart</Link>
         </div>
 
@@ -47,7 +53,7 @@ export default function Navbar() {
             <NavLink to="/" end onClick={closeMenu} className={({ isActive }) => `rounded-xl px-3 py-3 text-sm font-semibold ${isActive ? 'bg-mint text-emerald-700' : 'text-slate-600'}`}>Home</NavLink>
             <NavLink to="/marketplace" onClick={closeMenu} className={({ isActive }) => `rounded-xl px-3 py-3 text-sm font-semibold ${isActive ? 'bg-mint text-emerald-700' : 'text-slate-600'}`}>Marketplace</NavLink>
             <NavLink to="/how-it-works" onClick={closeMenu} className={({ isActive }) => `rounded-xl px-3 py-3 text-sm font-semibold ${isActive ? 'bg-mint text-emerald-700' : 'text-slate-600'}`}>How it works</NavLink>
-            <button type="button" onClick={closeMenu} className="rounded-xl px-3 py-3 text-left text-sm font-semibold text-slate-600">Log in</button>
+            <Link to="/login" onClick={closeMenu} className="rounded-xl px-3 py-3 text-sm font-semibold text-slate-600">Log in</Link>
             <Link to="/marketplace" onClick={closeMenu} className="mt-2 rounded-full bg-emerald-500 px-5 py-3 text-center text-sm font-bold text-white">Join CampusCart</Link>
           </div>
         </div>
